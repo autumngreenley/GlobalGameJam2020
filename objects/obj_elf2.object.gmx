@@ -49,20 +49,7 @@ originaldepth=depth;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>movespeed=9;
-
-if(keyboard_check(ord('J'))){
-    x-=movespeed;
-}
-if(keyboard_check(ord('L'))){
-    x+=movespeed;
-}
-if(keyboard_check(ord('I'))){
-    y-=movespeed;
-}
-if(keyboard_check(ord('K'))){
-    y+=movespeed;
-}
+            <string>scr_elfmove(1);
 </string>
           </argument>
         </arguments>

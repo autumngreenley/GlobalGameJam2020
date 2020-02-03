@@ -32,6 +32,7 @@ currentobj2="";
 shoecount=0;
 timerset=false;
 timer=60*30; //60 frames per second for 30 seconds
+originaltimer=timer;
 </string>
           </argument>
         </arguments>
@@ -109,7 +110,7 @@ if(timer&lt;=0 &amp;&amp; timerset==false)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(10,10,ceil(timer/60));
+            <string>//draw_text(10,10,ceil(timer/60));
 </string>
           </argument>
         </arguments>

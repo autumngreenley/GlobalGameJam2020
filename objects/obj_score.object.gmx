@@ -52,10 +52,15 @@ draw_set_font(fnt_testing);
             <kind>1</kind>
             <string>if(room==rm_end)
 {
-    draw_text(10,10,hiscore);
-}else if(room==rm_workshop){
-    draw_text(100,100,obj_pickuphelper.shoecount);
+    if(hiscore==1)
+    {
+        draw_text(120,90,string(hiscore) + " Shoe");
+    }else{
+        draw_text(120,90,string(hiscore) + " Shoes");
+    }
 }
+
+
 </string>
           </argument>
         </arguments>

@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(ord('Z')))
+if(gamepad_button_check_pressed(0,gp_shoulderrb) || keyboard_check_pressed(ord('N')))
 {
     if(place_meeting(argument0.x,argument0.y,obj_hammer)){
         drag=true;
@@ -14,13 +14,13 @@ if(keyboard_check_pressed(ord('Z')))
     }
 }
 
-if(keyboard_check_released(ord('Z')))
+if(gamepad_button_check_released(0,gp_shoulderrb) || keyboard_check_released(ord('N')))
 {
     if(drag==true)
     {
         if(place_meeting(argument0.x,argument0.y,obj_shoe))
         {
-            scr_checkifmatch();
+            scr_checkifmatch(2);
         }
         drag=false;
         obj_pickuphelper.currentobj2="";

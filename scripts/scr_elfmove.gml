@@ -1,0 +1,59 @@
+movespeed=9;
+
+//if(gamepad_get_device_count()>0)
+//{
+    if(argument0==0)
+    {
+        axish=gp_axislh;
+        axisv=gp_axislv;
+    }
+    if(argument0==1)
+    {
+        axish=gp_axisrh;
+        axisv=gp_axisrv;
+    }
+    
+    if(gamepad_axis_value(0,axish)<-.4){
+        x-=movespeed;
+    }
+    if(gamepad_axis_value(0,axish)>.4){
+        x+=movespeed;
+    }
+    if(gamepad_axis_value(0,axisv)<-.4){
+        y-=movespeed;
+    }
+    if(gamepad_axis_value(0,axisv)>.4){
+        y+=movespeed;
+    }
+//}else{
+if(argument0==0)
+{
+    if(keyboard_check(ord('A'))){
+        x-=movespeed;
+    }
+    if(keyboard_check(ord('D'))){
+        x+=movespeed;
+    }
+    if(keyboard_check(ord('W'))){
+        y-=movespeed;
+    }
+    if(keyboard_check(ord('S'))){
+        y+=movespeed;
+    }
+}
+if(argument0==1)
+{
+    if(keyboard_check(ord('J'))){
+        x-=movespeed;
+    }
+    if(keyboard_check(ord('L'))){
+        x+=movespeed;
+    }
+    if(keyboard_check(ord('I'))){
+        y-=movespeed;
+    }
+    if(keyboard_check(ord('K'))){
+        y+=movespeed;
+    }
+}
+//}

@@ -3,26 +3,43 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_music</sound>
+    <sound>sound\snd_splat</sound>
+    <sound>sound\snd_thud</sound>
+    <sound>sound\snd_cork</sound>
+  </sounds>
   <sprites name="sprites">
+    <sprite>sprites\spr_timearc</sprite>
+    <sprite>sprites\spr_timefill</sprite>
+    <sprite>sprites\spr_sun</sprite>
+    <sprite>sprites\spr_moon</sprite>
     <sprite>sprites\spr_shoe</sprite>
     <sprite>sprites\spr_taskbox</sprite>
     <sprite>sprites\spr_hammer</sprite>
     <sprite>sprites\spr_playbutton</sprite>
     <sprite>sprites\spr_knife</sprite>
     <sprite>sprites\spr_squiggle</sprite>
+    <sprite>sprites\spr_playnoelf</sprite>
     <sprite>sprites\spr_elf1</sprite>
     <sprite>sprites\spr_elf2</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_title</background>
+    <background>background\bg_endscreen</background>
+    <background>background\bg_mainroom</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_reroll.gml</script>
+    <script>scripts\scr_reroll2.gml</script>
     <script>scripts\scr_toolhold.gml</script>
     <script>scripts\scr_checkifmatch.gml</script>
     <script>scripts\scr_elfstep.gml</script>
     <script>scripts\scr_elf2step.gml</script>
+    <script>scripts\scr_elfmove.gml</script>
     <script>scripts\scr_dimming.gml</script>
     <script>scripts\scr_updategoal.gml</script>
     <script>scripts\scr_depthplacer.gml</script>
@@ -32,6 +49,9 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_playbutton</object>
+    <object>objects\obj_playnoelf</object>
+    <object>objects\obj_timefill</object>
+    <object>objects\obj_timearc</object>
     <object>objects\obj_pickuphelper</object>
     <object>objects\obj_score</object>
     <object>objects\obj_taskmaster</object>
@@ -39,11 +59,14 @@
     <object>objects\obj_taskbox2</object>
     <object>objects\obj_taskbox1</object>
     <object>objects\obj_shoe</object>
+    <object>objects\obj_moon</object>
+    <object>objects\obj_sun</object>
     <object>objects\obj_hammer</object>
     <object>objects\obj_knife</object>
     <object>objects\obj_squiggle</object>
     <object>objects\obj_elf1</object>
     <object>objects\obj_elf2</object>
+    <object>objects\obj_musicmaster</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title</room>
